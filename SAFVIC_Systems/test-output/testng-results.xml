@@ -2,18 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23529" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:37:02 BDT">
+  <suite name="Suite" duration-ms="61119" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:51:12 BDT">
     <groups>
     </groups>
-    <test name="Dummy Test" duration-ms="14" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:38 BDT">
-    </test> <!-- Dummy Test -->
-    <test name="Officer Home Page Test" duration-ms="16243" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:54 BDT">
-      <class name="Academy.E2E.OfficerHomePage">
-        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="driverInitialization" is-config="true" duration-ms="7953" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:46 BDT">
+    <test name="Officer Home Page Test" duration-ms="25686" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:37 BDT">
+      <class name="officerSide.OfficerHomePage">
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="driverInitialization" is-config="true" duration-ms="15718" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:27 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="basePageNavigation" duration-ms="6832" started-at="2023-01-28T19:36:46 BDT" finished-at="2023-01-28T19:36:53 BDT">
+        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="basePageNavigation" duration-ms="8742" started-at="2023-01-29T01:50:27 BDT" finished-at="2023-01-29T01:50:36 BDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incidents1] but found [Incidents]]]>
@@ -26,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at Academy.E2E.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
+at officerSide.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -56,19 +54,19 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="terminateBrowser" is-config="true" duration-ms="923" started-at="2023-01-28T19:36:53 BDT" finished-at="2023-01-28T19:36:54 BDT">
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="terminateBrowser" is-config="true" duration-ms="862" started-at="2023-01-29T01:50:36 BDT" finished-at="2023-01-29T01:50:37 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-      </class> <!-- Academy.E2E.OfficerHomePage -->
+      </class> <!-- officerSide.OfficerHomePage -->
     </test> <!-- Officer Home Page Test -->
-    <test name="Officer login Test" duration-ms="23529" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:37:02 BDT">
-      <class name="Academy.E2E.OfficerLogin">
-        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="driverInitialization" is-config="true" duration-ms="11" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:38 BDT">
+    <test name="Officer login Test" duration-ms="61119" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:51:12 BDT">
+      <class name="officerSide.OfficerLogin">
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="driverInitialization" is-config="true" duration-ms="10" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:11 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="14024" started-at="2023-01-28T19:36:38 BDT" data-provider="getData" finished-at="2023-01-28T19:36:52 BDT">
+        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="32014" started-at="2023-01-29T01:50:11 BDT" data-provider="getData" finished-at="2023-01-29T01:50:43 BDT">
           <params>
             <param index="0">
               <value>
@@ -89,7 +87,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigation -->
-        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="9298" started-at="2023-01-28T19:36:52 BDT" data-provider="getData" finished-at="2023-01-28T19:37:01 BDT">
+        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="28927" started-at="2023-01-29T01:50:43 BDT" data-provider="getData" finished-at="2023-01-29T01:51:12 BDT">
           <params>
             <param index="0">
               <value>
@@ -110,11 +108,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigation -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="terminateBrowser" is-config="true" duration-ms="125" started-at="2023-01-28T19:37:01 BDT" finished-at="2023-01-28T19:37:02 BDT">
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="terminateBrowser" is-config="true" duration-ms="116" started-at="2023-01-29T01:51:12 BDT" finished-at="2023-01-29T01:51:12 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-      </class> <!-- Academy.E2E.OfficerLogin -->
+      </class> <!-- officerSide.OfficerLogin -->
     </test> <!-- Officer login Test -->
   </suite> <!-- Suite -->
 </testng-results>

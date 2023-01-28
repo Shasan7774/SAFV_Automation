@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <listeners>
-    <listener class-name="Academy.E2E.Listeners"/>
+    <listener class-name="officerSide.Listeners"/>
   </listeners>
   <test thread-count="5" name="Officer Home Page Test(failed)" parallel="tests">
     <classes>
-      <class name="Academy.E2E.OfficerHomePage">
+      <class name="officerSide.OfficerHomePage">
         <methods>
           <include name="driverInitialization"/>
-          <include name="basePageNavigation"/>
           <include name="terminateBrowser"/>
+          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- Academy.E2E.OfficerHomePage -->
+      </class> <!-- officerSide.OfficerHomePage -->
     </classes>
   </test> <!-- Officer Home Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
