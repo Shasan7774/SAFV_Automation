@@ -9,22 +9,17 @@
 <suite name="Suite" parallel="tests">
 <!-- parallel="tests" -->
 	<listeners>
-		<listener class-name="Academy.E2E.Listeners"/>
+		<listener class-name="officerSide.Listeners"/>
 	</listeners>
 
 	<test thread-count="5" name="Officer Home Page Test">
 		<classes>
-			<class name="Academy.E2E.OfficerHomePage" />
+			<class name="officerSide.OfficerHomePage" />
 		</classes>
 	</test>
 	<test name="Officer login Test">
 		<classes>
-			<class name="Academy.E2E.OfficerLogin" />
-		</classes>
-	</test>
-	<test name="Dummy Test">
-		<classes>
-			<class name="Academy.E2E.AppTest" />
+			<class name="officerSide.OfficerLogin" />
 		</classes>
 	</test>
 	<!-- Test -->

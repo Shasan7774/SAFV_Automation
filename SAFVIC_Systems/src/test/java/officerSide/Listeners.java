@@ -1,4 +1,4 @@
-package Academy.E2E;
+package officerSide;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
