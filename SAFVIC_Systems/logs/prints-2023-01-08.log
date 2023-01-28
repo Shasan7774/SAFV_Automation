@@ -1,0 +1,7 @@
+08:07:57.619 [TestNG-tests-2] INFO  resources.Base - First User's Credential Passed
+08:08:24.242 [TestNG-tests-2] INFO  resources.Base - User Login Successful
+08:08:28.344 [TestNG-tests-2] INFO  resources.Base - Second User's Credential Passed
+08:08:34.629 [TestNG-tests-2] INFO  resources.Base - User Login Successful
+16:27:05.205 [TestNG-tests-1] INFO  resources.Base - Driver is Initialized
+16:27:08.071 [TestNG-tests-1] INFO  resources.Base - Navigated to the login page
+16:27:08.671 [TestNG-tests-2] INFO  resources.Base - First User's Credential Passed

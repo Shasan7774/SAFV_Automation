@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23529" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:37:02 BDT">
+    <groups>
+    </groups>
+    <test name="Dummy Test" duration-ms="14" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:38 BDT">
+    </test> <!-- Dummy Test -->
+    <test name="Officer Home Page Test" duration-ms="16243" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:54 BDT">
+      <class name="Academy.E2E.OfficerHomePage">
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="driverInitialization" is-config="true" duration-ms="7953" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:46 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="basePageNavigation" duration-ms="6832" started-at="2023-01-28T19:36:46 BDT" finished-at="2023-01-28T19:36:53 BDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incidents1] but found [Incidents]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incidents1] but found [Incidents]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Academy.E2E.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Academy.E2E.OfficerHomePage@19b843ba]" name="terminateBrowser" is-config="true" duration-ms="923" started-at="2023-01-28T19:36:53 BDT" finished-at="2023-01-28T19:36:54 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- Academy.E2E.OfficerHomePage -->
+    </test> <!-- Officer Home Page Test -->
+    <test name="Officer login Test" duration-ms="23529" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:37:02 BDT">
+      <class name="Academy.E2E.OfficerLogin">
+        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="driverInitialization" is-config="true" duration-ms="11" started-at="2023-01-28T19:36:38 BDT" finished-at="2023-01-28T19:36:38 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="14024" started-at="2023-01-28T19:36:38 BDT" data-provider="getData" finished-at="2023-01-28T19:36:52 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hasan.shahria@brainstation-23.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bs23@Test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[First User's Credential Passed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageNavigation -->
+        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="9298" started-at="2023-01-28T19:36:52 BDT" data-provider="getData" finished-at="2023-01-28T19:37:01 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser2bs23@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bs23@Test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Second User's Credential Passed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageNavigation -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Academy.E2E.OfficerLogin@239105a8]" name="terminateBrowser" is-config="true" duration-ms="125" started-at="2023-01-28T19:37:01 BDT" finished-at="2023-01-28T19:37:02 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- Academy.E2E.OfficerLogin -->
+    </test> <!-- Officer login Test -->
+  </suite> <!-- Suite -->
+</testng-results>

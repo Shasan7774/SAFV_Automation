@@ -1,0 +1,7 @@
+10:02:12.716 [TestNG-tests-1] INFO  resources.Base - Driver is Initialized
+10:02:14.686 [TestNG-tests-1] INFO  resources.Base - Navigated to the login page
+10:02:15.164 [TestNG-tests-2] INFO  resources.Base - First User's Credential Passed
+10:02:16.529 [TestNG-tests-2] INFO  resources.Base - User Login Successful
+10:02:20.906 [TestNG-tests-2] INFO  resources.Base - Second User's Credential Passed
+10:02:22.240 [TestNG-tests-1] INFO  resources.Base - Incidents Found
+10:02:22.303 [TestNG-tests-1] INFO  resources.Base - Navbar is Displayed
