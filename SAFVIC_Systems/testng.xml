@@ -6,7 +6,7 @@
 	<class name="Academy.E2E.AppTest"/> </classes> </test> <comment Test> </suite> 
 	<comment Suite> -->
 
-<suite name="Suite" parallel="tests">
+<suite name="Suite">
 <!-- parallel="tests" -->
 	<listeners>
 		<listener class-name="officerSide.Listeners"/>

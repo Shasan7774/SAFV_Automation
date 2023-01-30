@@ -1,1 +1,4 @@
-01:51:12.802 [TestNG-tests-2] INFO  resources.Base - User Login Successful
+19:42:13.789 [main] INFO  resources.Base - First User's Credential Passed
+19:42:22.461 [main] INFO  resources.Base - User Login Successful
+19:42:25.213 [main] INFO  resources.Base - Second User's Credential Passed
+19:42:33.517 [main] INFO  resources.Base - User Login Successful
