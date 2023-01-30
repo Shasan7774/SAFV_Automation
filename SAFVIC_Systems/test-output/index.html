@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
               <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\shahr\git\SAFV_Automation\SAFVIC_Systems\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\BS702\git\SAFV_Automation\SAFVIC_Systems\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -103,8 +103,8 @@
                     </span>
                     <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="officerSide.OfficerHomePage" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="officerSide.OfficerHomePage" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,13 +117,13 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="officerSide.OfficerLogin" hash-for-method="loginPageNavigation(hasan.shahria@brainstation-23.com, bs23@Test123, First User&#039;s Credential Passed)">loginPageNavigation(hasan.shahria@brainstation-23.com, bs23@Test123, First User's Credential Passed)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="officerSide.OfficerLogin" class="method navigator-link" hash-for-method="loginPageNavigation(hasan.shahria@brainstation-23.com, bs23@Test123, First User&#039;s Credential Passed)">loginPageNavigation(hasan.shahria@brainstation-23.com, bs23@Test123, First User's Credential Passed)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="officerSide.OfficerLogin" hash-for-method="loginPageNavigation(testuser2bs23@gmail.com, bs23@Test123, Second User&#039;s Credential Passed)">loginPageNavigation(testuser2bs23@gmail.com, bs23@Test123, Second User's Credential Passed)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="officerSide.OfficerLogin" class="method navigator-link" hash-for-method="loginPageNavigation(testuser2bs23@gmail.com, bs23@Test123, Second User&#039;s Credential Passed)">loginPageNavigation(testuser2bs23@gmail.com, bs23@Test123, Second User's Credential Passed)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,12 +151,8 @@
                   <span class="method-name">basePageNavigation</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Incidents1] but found [Incidents]
 	at officerSide.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -189,22 +185,22 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shahr\git\SAFV_Automation\SAFVIC_Systems\testng.xml</span>
+            <span class="header-content">C:\Users\BS702\git\SAFV_Automation\SAFVIC_Systems\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;officerSide.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Officer Home Page Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Officer Home Page Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;officerSide.OfficerHomePage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Officer Home Page Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Officer login Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Officer login Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;officerSide.OfficerLogin&quot;/&gt;
     &lt;/classes&gt;
@@ -253,20 +249,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPageNavigation')
 data.setCell(0, 2, 'officerSide.OfficerLogin')
-data.setCell(0, 3, 32014);
+data.setCell(0, 3, 11508);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginPageNavigation')
 data.setCell(1, 2, 'officerSide.OfficerLogin')
-data.setCell(1, 3, 28927);
+data.setCell(1, 3, 11054);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'basePageNavigation')
 data.setCell(2, 2, 'officerSide.OfficerHomePage')
-data.setCell(2, 3, 8742);
+data.setCell(2, 3, 6464);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -297,40 +293,34 @@ return data;
                 <span class="method-name">driverInitialization</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">basePageNavigation</span>
+                <span class="method-start">10990 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">terminateBrowser</span>
+                <span class="method-start">17739 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">officerSide.OfficerLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">driverInitialization</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">18125 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginPageNavigation(hasan.shahria@brainstation-23.com, bs23@Test123, First User's Credential Passed)</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">18129 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">officerSide.OfficerHomePage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">15720 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">terminateBrowser</span>
-                <span class="method-start">24816 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">officerSide.OfficerLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginPageNavigation(testuser2bs23@gmail.com, bs23@Test123, Second User's Credential Passed)</span>
-                <span class="method-start">32066 ms</span>
+                <span class="method-start">29639 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">terminateBrowser</span>
-                <span class="method-start">60995 ms</span>
+                <span class="method-start">40694 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

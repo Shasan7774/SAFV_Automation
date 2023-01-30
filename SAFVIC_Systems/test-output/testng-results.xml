@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="61119" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:51:12 BDT">
+  <suite started-at="2023-01-30T19:41:52 BDT" name="Suite" finished-at="2023-01-30T19:42:49 BDT" duration-ms="56933">
     <groups>
     </groups>
-    <test name="Officer Home Page Test" duration-ms="25686" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:37 BDT">
+    <test started-at="2023-01-30T19:41:52 BDT" name="Officer Home Page Test" finished-at="2023-01-30T19:42:10 BDT" duration-ms="17841">
       <class name="officerSide.OfficerHomePage">
-        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="driverInitialization" is-config="true" duration-ms="15718" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:27 BDT">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:officerSide.OfficerHomePage@4f936da8]" started-at="2023-01-30T19:41:52 BDT" name="driverInitialization" finished-at="2023-01-30T19:42:03 BDT" duration-ms="10975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="basePageNavigation" duration-ms="8742" started-at="2023-01-29T01:50:27 BDT" finished-at="2023-01-29T01:50:36 BDT">
+        <test-method signature="basePageNavigation()[pri:0, instance:officerSide.OfficerHomePage@4f936da8]" started-at="2023-01-30T19:42:03 BDT" name="basePageNavigation" finished-at="2023-01-30T19:42:10 BDT" duration-ms="6464" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incidents1] but found [Incidents]]]>
@@ -25,10 +25,10 @@ at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
 at officerSide.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -37,36 +37,41 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerHomePage@19b843ba]" name="terminateBrowser" is-config="true" duration-ms="862" started-at="2023-01-29T01:50:36 BDT" finished-at="2023-01-29T01:50:37 BDT">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerHomePage@4f936da8]" started-at="2023-01-30T19:42:10 BDT" name="terminateBrowser" finished-at="2023-01-30T19:42:10 BDT" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
       </class> <!-- officerSide.OfficerHomePage -->
     </test> <!-- Officer Home Page Test -->
-    <test name="Officer login Test" duration-ms="61119" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:51:12 BDT">
+    <test started-at="2023-01-30T19:42:10 BDT" name="Officer login Test" finished-at="2023-01-30T19:42:49 BDT" duration-ms="38804">
       <class name="officerSide.OfficerLogin">
-        <test-method status="PASS" signature="driverInitialization()[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="driverInitialization" is-config="true" duration-ms="10" started-at="2023-01-29T01:50:11 BDT" finished-at="2023-01-29T01:50:11 BDT">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:officerSide.OfficerLogin@6e521c1e]" started-at="2023-01-30T19:42:10 BDT" name="driverInitialization" finished-at="2023-01-30T19:42:10 BDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverInitialization -->
-        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="32014" started-at="2023-01-29T01:50:11 BDT" data-provider="getData" finished-at="2023-01-29T01:50:43 BDT">
+        <test-method signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@6e521c1e]" started-at="2023-01-30T19:42:10 BDT" name="loginPageNavigation" data-provider="getData" finished-at="2023-01-30T19:42:22 BDT" duration-ms="11508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +92,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigation -->
-        <test-method status="PASS" signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="loginPageNavigation" duration-ms="28927" started-at="2023-01-29T01:50:43 BDT" data-provider="getData" finished-at="2023-01-29T01:51:12 BDT">
+        <test-method signature="loginPageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:officerSide.OfficerLogin@6e521c1e]" started-at="2023-01-30T19:42:22 BDT" name="loginPageNavigation" data-provider="getData" finished-at="2023-01-30T19:42:33 BDT" duration-ms="11054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +113,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigation -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerLogin@239105a8]" name="terminateBrowser" is-config="true" duration-ms="116" started-at="2023-01-29T01:51:12 BDT" finished-at="2023-01-29T01:51:12 BDT">
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:officerSide.OfficerLogin@6e521c1e]" started-at="2023-01-30T19:42:33 BDT" name="terminateBrowser" finished-at="2023-01-30T19:42:49 BDT" duration-ms="16235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
