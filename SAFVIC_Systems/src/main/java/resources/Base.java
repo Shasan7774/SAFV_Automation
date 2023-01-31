@@ -33,10 +33,10 @@ public class Base {
 		
 		String safvURL= prop.getProperty("url");
 		
-		
 		if(browserName.equals("chrome")) { 
 			//execute in chrome -
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\shahr\\OneDrive\\Documents\\Drivers\\chromedriver_win32 (2)\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "run\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
 			//WebDriver driver = new ChromeDriver();
 			driver = new ChromeDriver();
