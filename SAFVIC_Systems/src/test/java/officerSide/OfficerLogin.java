@@ -41,7 +41,7 @@ public class OfficerLogin extends Base{
 		//ob1.getEmail().sendKeys("TestOFficer");
 		//ob1.getPassword().sendKeys("123");
 		
-		ob1.getLogin().click();
+		ob1.getLogin().click(); 
 		log.info("User Login Successful");
 	}
 	
