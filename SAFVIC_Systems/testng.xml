@@ -7,19 +7,19 @@
 	<comment Suite> -->
 
 <suite name="Suite">
-<!-- parallel="tests" -->
+	<!-- parallel="tests" -->
 	<listeners>
 		<listener class-name="officerSide.Listeners"/>
 	</listeners>
-
-	<test thread-count="5" name="Officer Home Page Test">
+	
+	<test  name="Officer login Test">
 		<classes>
-			<class name="officerSide.OfficerHomePage" />
+			<class name="officerSide.OfficerLogin"/>
 		</classes>
 	</test>
-	<test name="Officer login Test">
+	<test thread-count="5" name="Officer Home Page Test">
 		<classes>
-			<class name="officerSide.OfficerLogin" />
+			<class name="officerSide.OfficerHomePage"/>
 		</classes>
 	</test>
 	<!-- Test -->

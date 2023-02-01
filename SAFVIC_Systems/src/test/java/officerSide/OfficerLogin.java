@@ -25,8 +25,8 @@ public class OfficerLogin extends Base{
 		//driver.manage().window().maximize();
 	}
 	
-	@Test(dataProvider="getData")
-	public void loginPageNavigation(String userEmail, String password, String credText) throws IOException{
+	@Test(dataProvider = "getData")
+	public void loginPageNavigation(String userEmail, String password, String credText) throws IOException {
 		
 		driver = initializeDriver();
 		
@@ -37,15 +37,24 @@ public class OfficerLogin extends Base{
 		LoginPage ob1 = new LoginPage(driver);
 		ob1.getEmail().sendKeys(userEmail);
 		ob1.getPassword().sendKeys(password);
-		log.info(credText);
+		log.info("Credential Passed");
 		//ob1.getEmail().sendKeys("TestOFficer");
 		//ob1.getPassword().sendKeys("123");
 		
 		ob1.getLogin().click(); 
 		log.info("User Login Successful");
 	}
-	
-    @DataProvider
+	/*
+    public  String getOfficerEmail(String userEmail) {
+    	 userEmail = prop.getProperty("officerEmail");
+    	 return userEmail;
+    }
+    public String getOfficerPassword(String password) {
+    	password = prop.getProperty("officerPassword");
+    	return password;
+    }
+    */
+	@DataProvider
 	public Object[][] getData() {
 		Object[][] data = new Object[2][3];
 		//0th Row or 1st data set  
@@ -59,7 +68,7 @@ public class OfficerLogin extends Base{
 		data[1][2] = "Second User's Credential Passed";
 		return data;
 	}
-    
+ 
     @AfterTest
     public void terminateBrowser() {
     	driver.close();

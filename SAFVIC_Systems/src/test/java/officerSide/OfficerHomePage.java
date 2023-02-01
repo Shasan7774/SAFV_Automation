@@ -23,7 +23,6 @@ public class OfficerHomePage extends Base{
 		
 		driver = initializeDriver();
 		
-		
 		log.info("Driver is Initialized");
 		//driver.get("https://safv.stellasoftware.com/");
 		driver.get(prop.getProperty("url"));
@@ -35,7 +34,7 @@ public class OfficerHomePage extends Base{
 	public void basePageNavigation() throws IOException{
 		LoginPage ob1 = new LoginPage(driver);
 		//ob1.getEmail().sendKeys("TestOFficer");
-		ob1.getEmail().sendKeys("testuser1bs23@gmail.com");
+		ob1.getEmail().sendKeys("hasan.shahria@brainstation-23.com");
 		ob1.getPassword().sendKeys("bs23@Test123");
 		//ob1.getPassword().sendKeys("123");   
 		ob1.getLogin().click();

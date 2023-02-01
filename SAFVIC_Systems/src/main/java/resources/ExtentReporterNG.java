@@ -8,7 +8,7 @@ public class ExtentReporterNG {
 	static ExtentReports extent;
 	
 	public static ExtentReports getReportObject() {
-		//this method is responsible to complete all the configuration
+		//this method is responsible to complete all the reporting configuration
 		String path = System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("SAFV Web Automation Results");

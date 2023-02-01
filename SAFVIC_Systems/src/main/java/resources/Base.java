@@ -24,18 +24,17 @@ public class Base {
 		
 		
 		prop = new Properties();
-		//FileInputStream fis = new FileInputStream("C:\\Users\\shahr\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		   
-		String browserName = prop.getProperty("browser"); 
+		String browserName = prop.getProperty("browser");
+		
 		System.out.println("Executing in:"+browserName);
 		
 		String safvURL= prop.getProperty("url");
 		
 		if(browserName.equals("chrome")) { 
 			//execute in chrome -
-			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\shahr\\OneDrive\\Documents\\Drivers\\chromedriver_win32 (2)\\chromedriver.exe");
 			//System.setProperty("webdriver.chrome.driver", "run\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\drivers\\chromedriver.exe");
 			//WebDriver driver = new ChromeDriver();
@@ -43,21 +42,23 @@ public class Base {
 		} 
 		else if(browserName.equals("firefox")) { 
 			//execute in firefox
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\shahr\\OneDrive\\Documents\\Drivers\\geckodriver-v0.32.0-win-aarch64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\drivers\\geckodriver.exe");
 			//WebDriver driver = new FirefoxDriver();
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equals("edge")) { 
 			//execute in edge
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\shahr\\OneDrive\\Documents\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\drivers\\msedgedriver.exe");
 			//WebDriver driver = new EdgeDriver();
 			driver = new EdgeDriver();
 		}
-		
+	//Implicit Wait	
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  
-	return driver;
 	
+	return driver;
 	}
+	
+	//take screenshot
 	public String getScreenshotPath(String testCaseName, WebDriver driver) throws IOException 
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;

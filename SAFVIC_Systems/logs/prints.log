@@ -1,8 +1,4 @@
-08:02:58.222 [main] INFO  resources.Base - Second User's Credential Passed
-08:03:05.150 [main] INFO  resources.Base - User Login Successful
-09:11:21.427 [main] INFO  resources.Base - Driver is Initialized
-09:11:30.511 [main] INFO  resources.Base - Navigated to the login page
-09:12:10.233 [main] INFO  resources.Base - First User's Credential Passed
-09:12:16.493 [main] INFO  resources.Base - User Login Successful
-09:12:20.188 [main] INFO  resources.Base - Second User's Credential Passed
-09:12:26.171 [main] INFO  resources.Base - User Login Successful
+16:00:48.741 [main] INFO  resources.Base - Credential Passed
+16:00:48.954 [main] INFO  resources.Base - Navigated to the login page
+16:00:55.994 [main] INFO  resources.Base - User Login Successful
+16:00:57.049 [main] INFO  resources.Base - Driver is Initialized

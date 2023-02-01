@@ -27,7 +27,6 @@ public class Listeners extends Base implements ITestListener{
 		//test = extent.createTest("Initial Demo Test");
 		test = extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
-		
 		}
 	@Override
 	public void onTestSuccess(ITestResult result) {
@@ -71,14 +70,12 @@ public class Listeners extends Base implements ITestListener{
 		extent.flush();
 		//once all the test cases are executed through our testng.xml file, at the end this method will get executed
 		//onFinish() method is the last method to execute after all test cases are executed 
-		
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onStart(context);
-		
 	}
 
 	@Override
@@ -93,16 +90,10 @@ public class Listeners extends Base implements ITestListener{
 		//ITestListener.super.onTestFailedWithTimeout(result);
 	}
 
-	
-
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestSkipped(result);
 	}
-
-	
-
-	
 
 }
