@@ -3,31 +3,37 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class Incident {
 	public WebDriver driver;
 	
-	By incidentTab = By.id("test");
+	By incidentTab = By.partialLinkText("/IncidentArea/Incidents/Edit?incidentId");
 	 
-	By incidentDate =  By.id("Email");   
-	By incidentCaseNo = By.id("Password");
-	By officerBadgeNumber = By.xpath("//div/button");
+	By incidentDate =  By.xpath("//div/input[@id = 'IncidentDate']");
+	By agencyCaseNo = By.xpath("//input[@id='AgencyIdentifier']");
+	By officerBadgeNumber = By.xpath("//input[@id='BadgeNumber']");
 	
-	By officerRank =  By.id("Email");   
-	By district = By.id("Password");
-	By childernInvolved = By.xpath("//div/button");
-	By officerPrimayConcern =  By.id("Email");   
-	By suspectedMethManufacture = By.id("Password");
-	By sensitiveIssues = By.xpath("//div/button");
-	By covidExposure =  By.id("Email");   
-	By policeContacted = By.id("Password");
-	By reported = By.xpath("//div/button");
-	By dispathcedDate =  By.id("Email");   
-	By dispathcedTime = By.id("Password");
-    By incidentSave = By.id("test");
+	By officerRank =  By.xpath("//input[@id='OfficerRank']");   
+	By district = By.xpath("//input[@id='District']");
+	By childernInvolved = By.xpath("//input[@id='InvolvesChildren']");
+	By officerPrimayConcern =  By.xpath("//textarea[@id='OfficerPrimaryConcern']");   
+	By suspectedMethManufacture = By.xpath("//textarea[@id='SuspectedMethManufacture']");
+	By sensitiveIssues = By.xpath("//textarea[@id='SensitiveIssues']");
+	By covidExposure =  By.xpath("//*[@id='incident-form']/div/div[1]/div[15]/div/span[1]/span");
+	By policeContacted = By.xpath("//div/span[@aria-owns='ReasonForContactId_listbox']");
+	By reasonPoliceContacted = By.xpath("//*[text()='911 call from within location']");
+	By reported = By.xpath("//div/span[@aria-labelledby='ReportedId_label']");
+	By detailsReported = By.xpath("//*[text()='911 call hang-up']");
+	
+	By clickDispatchedDate =  By.xpath("//div/input[@id='DispatchedDate']");   
+	//By selectDispatchedDate = By.xpath(""); 
+	By clickDispathcedTime = By.xpath("//div/input[@id='DispatchedTime']");
+	//By selectDispathcedTime = By.xpath("");
+    By incidentSave = By.xpath("//div/button[@type='submit']");
 	
 	public Incident(WebDriver driver) {
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub 
 		this.driver = driver;
 	}
 
@@ -40,7 +46,7 @@ public class Incident {
 	}
 	
 	public WebElement getIncidentCaseNo() {
-		return driver.findElement(incidentCaseNo);
+		return driver.findElement(agencyCaseNo);
 	}
 	
 	public WebElement getOfficerBadgeNumber() {
@@ -74,13 +80,14 @@ public class Incident {
 		return driver.findElement(reported);
 	}
 	public WebElement getDispathcedDate() {
-		return driver.findElement(dispathcedDate);
+		return driver.findElement(clickDispatchedDate);
 	}
 	public WebElement getDispathcedTime() {
-		return driver.findElement(dispathcedDate);
+		return driver.findElement(clickDispathcedTime);
 	}
 	public WebElement getIncidentSave() {
-		return driver.findElement(dispathcedDate);
+		return driver.findElement(incidentSave);
 	}
+	
 	
 }

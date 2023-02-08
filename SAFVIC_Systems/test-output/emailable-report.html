@@ -9,59 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Officer login Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,292</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Officer Home Page Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,221</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">78,513</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Officer login Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">70,068</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Officer Home Page Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,749</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">93,817</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Officer login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">officerSide.OfficerLogin</td><td><a href="#m0">loginPageNavigation</a></td><td rowspan="2">1675245620309</td><td rowspan="2">9559</td></tr><tr class="passedeven"><td><a href="#m1">loginPageNavigation</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Officer Home Page Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">officerSide.OfficerHomePage</td><td><a href="#m2">terminateBrowser</a></td><td rowspan="1">1675245654552</td><td rowspan="1">16134</td></tr><tr><th colspan="4">Officer Home Page Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">officerSide.OfficerHomePage</td><td><a href="#m3">basePageNavigation</a></td><td rowspan="1">1675245649081</td><td rowspan="1">5459</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Officer login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">officerSide.OfficerLogin</td><td><a href="#m0">loginPageNavigation</a></td><td rowspan="2">1675315902767</td><td rowspan="2">28630</td></tr><tr class="passedeven"><td><a href="#m1">loginPageNavigation</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Officer Home Page Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">officerSide.OfficerHomePage</td><td><a href="#m2">basePageNavigation</a></td><td rowspan="1">1675315975806</td><td rowspan="1">4637</td></tr></tbody>
 </table>
-<h2>Officer login Test</h2><h3 id="m0">officerSide.OfficerLogin#loginPageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testuser2bs23@gmail.com</td><td>bs23@Test123</td><td>Second User&apos;s Credential Passed</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">officerSide.OfficerLogin#loginPageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>hasan.shahria@brainstation-23.com</td><td>bs23@Test123</td><td>First User&apos;s Credential Passed</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Officer Home Page Test</h2><h3 id="m2">officerSide.OfficerHomePage#terminateBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: unable to connect to renderer)
-  (Session info: chrome=109.0.5414.120)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eefa7f9c943cb0f2642256b4bff6b937, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59562/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eefa7f9c943cb0f2642256b4bff6b937
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:432)
-	at officerSide.OfficerHomePage.terminateBrowser(OfficerHomePage.java:52)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">officerSide.OfficerHomePage#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eefa7f9c943cb0f2642256b4bff6b937, findElement {using=css selector, value=body &gt; div.page-wrapper &gt; div.page-container &gt; div.page-content-wrapper.foggy-page-container &gt; div &gt; div:nth-child(3) &gt; div:nth-child(1) &gt; div &gt; div:nth-child(1) &gt; a &gt; div &gt; div &gt; span.info-box-text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BS702\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59562/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eefa7f9c943cb0f2642256b4bff6b937
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at pageObjects.HomePage.getTitle(HomePage.java:20)
+<h2>Officer login Test</h2><h3 id="m0">officerSide.OfficerLogin#loginPageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>hasan.shahria@brainstation-23.com</td><td>bs23@Test123</td><td>First User&apos;s Credential Passed</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">officerSide.OfficerLogin#loginPageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testuser2bs23@gmail.com</td><td>bs23@Test123</td><td>Second User&apos;s Credential Passed</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Officer Home Page Test</h2><h3 id="m2">officerSide.OfficerHomePage#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incidents1] but found [Incidents]
 	at officerSide.OfficerHomePage.basePageNavigation(OfficerHomePage.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
