@@ -15,7 +15,7 @@ public class LoginPage {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
 	}
-
+	
 	public WebElement getEmail() {
 		return driver.findElement(email);
 	}

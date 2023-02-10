@@ -18,7 +18,7 @@ public class Incident {
 	By district = By.xpath("//input[@id='District']");
 	By childernInvolved = By.xpath("//input[@id='InvolvesChildren']");
 	By officerPrimayConcern =  By.xpath("//textarea[@id='OfficerPrimaryConcern']");   
-	By suspectedMethManufacture = By.xpath("//textarea[@id='SuspectedMethManufacture']");
+	By suspectedMethManufacture = By.xpath("//textarea[@id 'SuspectedMethManufacture']");
 	By sensitiveIssues = By.xpath("//textarea[@id='SensitiveIssues']");
 	By covidExposure =  By.xpath("//*[@id='incident-form']/div/div[1]/div[15]/div/span[1]/span");
 	By policeContacted = By.xpath("//div/span[@aria-owns='ReasonForContactId_listbox']");
@@ -31,7 +31,7 @@ public class Incident {
 	By clickDispathcedTime = By.xpath("//div/input[@id='DispatchedTime']");
 	//By selectDispathcedTime = By.xpath("");
     By incidentSave = By.xpath("//div/button[@type='submit']");
-	
+	 
 	public Incident(WebDriver driver) {
 		// TODO Auto-generated constructor stub 
 		this.driver = driver;
