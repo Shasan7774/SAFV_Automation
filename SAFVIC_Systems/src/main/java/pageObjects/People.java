@@ -19,7 +19,7 @@ public class People {
 	By race = By.xpath("");
 	By sex = By.xpath("");
 	By dob = By.xpath("");
-	
+	 
 	public People(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
